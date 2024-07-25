@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Base Title {% endblock %}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        .header {
+            background-color: #343a40; /* Bootstrap dark theme background color */
+            padding: 10px 0;
+        }
+
+        .header h1 {
+            color: #ffffff; /* White text */
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .full-height {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Authentication System</h1>
+    </div>
+</header>
+
+<div class="container mt-4">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
